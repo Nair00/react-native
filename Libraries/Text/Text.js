@@ -192,7 +192,7 @@ const Text: React.AbstractComponent<
     }
   }
 
-  let numberOfLines = 1;
+  let numberOfLines = restProps.numberOfLines;
   if (numberOfLines != null && !(numberOfLines >= 0)) {
     console.error(
       `'numberOfLines' in <Text> must be a non-negative number, received: ${numberOfLines}. The value will be set to 0.`,
